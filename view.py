@@ -10,7 +10,7 @@ import math
 from typing import Callable
 from udp_stream import VizEventSender
 
-__GREEN_CIRCLE__ = Path(r"C:\Users\Laptop78\Documents\Player Tracking\UI 2\assets\green_oval.png")
+__GREEN_CIRCLE__ = Path(r"./assets/green_oval.png")
 
 
 def load_style_sheet(file_name)->str:

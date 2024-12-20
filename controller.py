@@ -6,7 +6,7 @@ import time
 from kafka import KProducer
 import json
 
-__KAFKA_CONFIG__ = r"C:\Users\Laptop78\Documents\Player Tracking\UI 2\tracking_core_kafka_config.ini"
+__KAFKA_CONFIG__ = r"./tracking_core_kafka_config.ini"
 
 class StateGenerator:
     UNASSOCIATED = 0
