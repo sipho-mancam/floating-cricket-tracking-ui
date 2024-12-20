@@ -1,4 +1,5 @@
-from cricket_view_f.src.view import CricketTrackingWidget, load_style_sheet
+from cricket_view_deps.view import CricketTrackingWidget, load_style_sheet
+# from cricket_view_f.view import CricketTrackingWidget, load_style_sheet
 from PyQt5.QtWidgets import QApplication
 import sys
 

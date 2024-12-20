@@ -6,12 +6,16 @@ from pathlib import Path
 import numpy as np
 import math
 from typing import Callable
+import os
+
 
 from .common_widget import *
 from .controller import DataAssociationsController, StateGenerator, EventsController
 from .udp_stream import VizEventSender
+from .paths import __CURRENT_DIRECTORY__
 
-__GREEN_CIRCLE__ = Path(r"./assets/green_oval.png")
+
+__GREEN_CIRCLE__ = Path(os.path.join(__CURRENT_DIRECTORY__, "assets/green_oval.png"))
 
 
 def load_style_sheet(file_name)->str:
@@ -74,6 +78,8 @@ class CricketOvalWindow(QLabel):
         self.__id_recievers.add(func)
 
     def initUI(self)->None:
+        print(__file__)
+        print(f"Green Circle Path exists: {os.path.exists(__GREEN_CIRCLE__)}, Path: {__GREEN_CIRCLE__}")
         self.__original_pixmap = QPixmap(__GREEN_CIRCLE__.as_posix())
         self.draw_boundaries()
         self.setPixmap(self.__original_pixmap.copy())

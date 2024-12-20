@@ -2,7 +2,7 @@ from .kafka import KConsumer, KProducer
 from pathlib import Path
 import json
 
-__KAFKA_CONFIG__ = Path(r"tracking_core_kafka_config.ini")
+__KAFKA_CONFIG__ = Path(r"./tracking_core_kafka_config.ini")
 
 class TrackingDataModel:
     def __init__(self)->None:
