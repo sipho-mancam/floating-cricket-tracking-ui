@@ -1,4 +1,4 @@
-from kafka import KConsumer, KProducer
+from .kafka import KConsumer, KProducer
 from pathlib import Path
 import json
 

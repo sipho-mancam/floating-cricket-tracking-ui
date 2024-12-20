@@ -3,12 +3,13 @@ from PyQt5.QtGui import QImage, QPixmap, QMouseEvent
 from PyQt5.QtWidgets import (QApplication, QWidget, QLabel,
                              QSizePolicy, QHBoxLayout)
 from pathlib import Path
-from common_widget import *
-from controller import DataAssociationsController, StateGenerator, EventsController
 import numpy as np
 import math
 from typing import Callable
-from udp_stream import VizEventSender
+
+from .common_widget import *
+from .controller import DataAssociationsController, StateGenerator, EventsController
+from .udp_stream import VizEventSender
 
 __GREEN_CIRCLE__ = Path(r"./assets/green_oval.png")
 

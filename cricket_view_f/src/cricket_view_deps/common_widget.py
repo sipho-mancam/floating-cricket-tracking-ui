@@ -4,7 +4,6 @@ from PyQt5.QtWidgets import (QApplication, QWidget, QLabel, QPushButton,
 from PyQt5.QtGui import QImage, QPixmap, QColor, QPaintEvent, QPen, QBrush, QPainter
 from PyQt5.QtCore import Qt, QTimer
 
-
     
 class ButtonWithID(QPushButton):
     def __init__(self, button_text,  id:dict, parent=None)->None:

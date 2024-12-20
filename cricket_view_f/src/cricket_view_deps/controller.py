@@ -1,10 +1,11 @@
-
-from model import TrackingDataModel
 from PyQt5.QtCore import QTimer
 from pprint import pprint
 import time
-from kafka import KProducer
 import json
+
+from .kafka import KProducer
+from .model import TrackingDataModel
+
 
 __KAFKA_CONFIG__ = r"./tracking_core_kafka_config.ini"
 
